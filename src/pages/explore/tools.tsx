@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Item from '@/components/explore/Item'
+import Heading from '@/components/explore/Heading'
 
 export interface Item {
   image: string,
@@ -8,25 +9,39 @@ export interface Item {
   desc: string
 }
 
-const Tools = () => {
+export interface ExporeProps {
+  items: [Item]
+}
+
+const Tools = ({ items }: ExporeProps) => {
+  useEffect(() => {
+    console.log(items)
+  })
+
   return (
-    <div>
-      Buy tools here
+    <div className='flex flex-col w-full h-full'>
+      <Heading text={"Tools ⛏"} />
+      <div className="flex flex-col">
+        {items.map((item: Item) => <Item desc={item.desc} image={item.image} price={item.price} title={item.title} key={0} />)}
+        {items.map((item: Item) => <Item desc={item.desc} image={item.image} price={item.price} title={item.title} key={0} />)}
+        {items.map((item: Item) => <Item desc={item.desc} image={item.image} price={item.price} title={item.title} key={0} />)}
+        {items.map((item: Item) => <Item desc={item.desc} image={item.image} price={item.price} title={item.title} key={0} />)}
+      </div>
     </div>
   )
 }
 
-export async function getServerSideProps() {  
-  const data: [Item] = [
+export async function getServerSideProps() {
+  const items: [Item] = [
     {
-      "image":"https://th.bing.com/th/id/R.8e7c74473fe968ade654d5173e0651bd?rik=ujZJYAcQ%2fDaSxg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fshovel-hd-png-shovel-transparent-png-image-2412.png&ehk=JlIIavrGVLZvsrU8WJnBsKfi%2bbkOjpl%2bYmBpisqK4S0%3d&risl=&pid=ImgRaw&r=0",
-      "title":"shovel",
-      "desc":"shovel",
-      "price":500
+      "image": "https://gizacon.com/cdn/shop/products/UP-168-P_37c88cf4-a350-4f29-8294-2732e03efd9a_360x.jpg?v=1613559519",
+      "title": "shovel",
+      "desc": "shovel",
+      "price": 500
     }
   ]
 
-  return { props: { data } }
+  return { props: { items } }
 }
 
 export default Tools
