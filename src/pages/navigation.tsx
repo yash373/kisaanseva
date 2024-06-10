@@ -3,7 +3,7 @@ import Button from '@/components/navigation/Button'
 
 const Navigation = () => {
   return (
-    <div className='flex flex-col w-full h-[95%] rounded-md divide-y bg-slate-800 md:w-[95%]'>
+    <div className='flex flex-col w-full mt-5 h-full rounded-md divide-y bg-slate-800 md:w-[95%]'>
       <Button color={false} link='/explore/tools' text='buy tools' />
       <Button color={false} link='/explore/seeds' text='buy seeds' />
       <Button color={false} link='/explore/fertilizers' text='buy fertilizers' />
