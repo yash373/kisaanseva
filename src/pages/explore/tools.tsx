@@ -10,7 +10,7 @@ export interface Item {
 }
 
 export interface ExporeProps {
-  items: [Item]
+  items: Item[]
 }
 
 const Tools = ({ items }: ExporeProps) => {
@@ -21,10 +21,7 @@ const Tools = ({ items }: ExporeProps) => {
   return (
     <div className='flex flex-col w-full h-full'>
       <Heading text={"Tools ⛏"} />
-      <div className="flex flex-col">
-        {items.map((item: Item) => <Item desc={item.desc} image={item.image} price={item.price} title={item.title} key={0} />)}
-        {items.map((item: Item) => <Item desc={item.desc} image={item.image} price={item.price} title={item.title} key={0} />)}
-        {items.map((item: Item) => <Item desc={item.desc} image={item.image} price={item.price} title={item.title} key={0} />)}
+      <div className="flex flex-col pb-5 space-y-5">
         {items.map((item: Item) => <Item desc={item.desc} image={item.image} price={item.price} title={item.title} key={0} />)}
       </div>
     </div>
@@ -32,13 +29,25 @@ const Tools = ({ items }: ExporeProps) => {
 }
 
 export async function getServerSideProps() {
-  const items: [Item] = [
+  const items: Item[] = [
     {
       "image": "https://gizacon.com/cdn/shop/products/UP-168-P_37c88cf4-a350-4f29-8294-2732e03efd9a_360x.jpg?v=1613559519",
       "title": "shovel",
       "desc": "shovel",
       "price": 500
-    }
+    },
+    {
+      "image": "https://gizacon.com/cdn/shop/products/UP-168-P_37c88cf4-a350-4f29-8294-2732e03efd9a_360x.jpg?v=1613559519",
+      "title": "shovel",
+      "desc": "shovel",
+      "price": 500
+    },
+    {
+      "image": "https://gizacon.com/cdn/shop/products/UP-168-P_37c88cf4-a350-4f29-8294-2732e03efd9a_360x.jpg?v=1613559519",
+      "title": "shovel",
+      "desc": "shovel",
+      "price": 500
+    },
   ]
 
   return { props: { items } }

@@ -6,7 +6,7 @@ export interface ItemDescProps {
 
 const ItemDesc = ({desc}: ItemDescProps) => {
   return (
-    <div>
+    <div className='font-light text-base'>
       {desc}
     </div>
   )

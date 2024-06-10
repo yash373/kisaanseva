@@ -6,7 +6,7 @@ export interface ItemPriceProps {
 
 const ItemPrice = ({ price }: ItemPriceProps) => {
     return (
-        <div>
+        <div className='font-semibold text-lg'>
             ₹ {price}
         </div>
     )
