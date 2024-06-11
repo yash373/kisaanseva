@@ -6,7 +6,7 @@ export interface HeadingProps {
 
 const Heading = ({text}: HeadingProps) => {
   return (
-    <p className='text-3xl text-center py-5 mb-auto font-extrabold'>
+    <p className='text-3xl text-center py-5 font-extrabold'>
       {text}
     </p>
   )

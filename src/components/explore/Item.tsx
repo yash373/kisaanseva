@@ -13,11 +13,13 @@ export interface ItemProps {
 
 const Item = ({ image, title, desc, price }: ItemProps) => {
     return (
-        <div className='flex mx-auto my-auto h-auto justify-center items-left text-left flex-col'>
+        <div className='flex w-[90vw] mx-auto h-auto justify-center text-left'>
             <ItemIMG img={image} />
-            <ItemPrice price={price} />
-            <ItemTitle title={title} />
-            <ItemDesc desc={desc} />
+            <div className='flex flex-col w-[75vw] mt-5'>
+                <ItemTitle title={title} />
+                <ItemPrice price={price} />
+                <ItemDesc desc={desc} />
+            </div>
         </div>
     )
 }

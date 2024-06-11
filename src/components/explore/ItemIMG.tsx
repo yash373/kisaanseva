@@ -6,7 +6,9 @@ export interface ItemIMGProps {
 
 const ItemIMG = ({ img }: ItemIMGProps) => {
     return (
-        <img className='h-[50vh] w-[95vw] md:w-[40vw] m-5 mx-auto rounded-md' src={img} alt="itemimg" />
+        <div className='w-[40vw] flex justify-center items-center h-auto m-5'>
+            <img className='h-auto rounded-md' src={img} alt="itemimg" />
+        </div>
     )
 }
 
