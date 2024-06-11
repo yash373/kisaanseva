@@ -6,7 +6,7 @@ export interface ItemTitleProps {
 
 const ItemTitle = ({ title }: ItemTitleProps) => {
     return (
-        <p className='font-semibold text-xl'>
+        <p className='font-semibold capitalize text-xl'>
             {title}
         </p>
     )
