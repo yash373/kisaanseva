@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 interface Item {
-    img: string,
+    image: string,
     price: number,
     category: string,
     title: string,
@@ -16,5 +16,29 @@ export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<ResponseData>
 ) {
-    res.status(200).json({ data: [] })
+    res.status(200).json({
+        data: [
+            {
+                "image": "https://gizacon.com/cdn/shop/products/UP-168-P_37c88cf4-a350-4f29-8294-2732e03efd9a_360x.jpg?v=1613559519",
+                "title": "shovel",
+                "desc": "shovel",
+                "category": "tools",
+                "price": 500
+            },
+            {
+                "image": "https://gizacon.com/cdn/shop/products/UP-168-P_37c88cf4-a350-4f29-8294-2732e03efd9a_360x.jpg?v=1613559519",
+                "title": "shovel",
+                "desc": "shovel",
+                "category": "tools",
+                "price": 500
+            },
+            {
+                "image": "https://gizacon.com/cdn/shop/products/UP-168-P_37c88cf4-a350-4f29-8294-2732e03efd9a_360x.jpg?v=1613559519",
+                "title": "shovel",
+                "desc": "shovel",
+                "category": "tools",
+                "price": 500
+            },
+        ]
+    })
 }
