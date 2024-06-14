@@ -1,19 +1,12 @@
 import React, { useEffect } from 'react'
+import { ItemProps } from '../_app'
 import Item from '@/components/explore/Item'
 import Heading from '@/components/explore/Heading'
 
 const category: string = "fertilizers"
 
-export interface Item {
-  image: string,
-  title: string,
-  price: number,
-  category: string,
-  desc: string
-}
-
 export interface ExporeProps {
-  items: Item[]
+  items: ItemProps[]
 }
 
 const Fertilizers = ({ items }: ExporeProps) => {
@@ -25,7 +18,7 @@ const Fertilizers = ({ items }: ExporeProps) => {
     <div className='flex flex-col w-full h-full'>
       <Heading text={"Fertilizers 💉"} />
       <div className="flex flex-col pb-5">
-        {items.map((item: Item) => <Item desc={item.desc} image={item.image} price={item.price} title={item.title} key={0} />)}
+        {items.map((item: ItemProps) => <Item desc={item.desc} image={item.image} price={item.price} title={item.title} key={0} />)}
       </div>
     </div>
   )
@@ -35,8 +28,8 @@ export async function getServerSideProps() {
   const res = await fetch("https://onlyfarmers.vercel.app/api/getData")
   const data = await res.json()
 
-  const parsedData: Item[] = data["data"]
-  const items: Item[] = parsedData.filter(item => item.category == category)
+  const parsedData: ItemProps[] = data["data"]
+  const items: ItemProps[] = parsedData.filter(item => item.category == category)
 
   return { props: { items } }
 }
