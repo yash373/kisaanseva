@@ -2,10 +2,13 @@ import React, { useEffect } from 'react'
 import Item from '@/components/explore/Item'
 import Heading from '@/components/explore/Heading'
 
+const category: string = "tools"
+
 export interface Item {
   image: string,
   title: string,
   price: number,
+  category: string,
   desc: string
 }
 
@@ -29,26 +32,11 @@ const Tools = ({ items }: ExporeProps) => {
 }
 
 export async function getServerSideProps() {
-  const items: Item[] = [
-    {
-      "image": "https://gizacon.com/cdn/shop/products/UP-168-P_37c88cf4-a350-4f29-8294-2732e03efd9a_360x.jpg?v=1613559519",
-      "title": "shovel",
-      "desc": "shovel",
-      "price": 500
-    },
-    {
-      "image": "https://gizacon.com/cdn/shop/products/UP-168-P_37c88cf4-a350-4f29-8294-2732e03efd9a_360x.jpg?v=1613559519",
-      "title": "shovel",
-      "desc": "shovel",
-      "price": 500
-    },
-    {
-      "image": "https://gizacon.com/cdn/shop/products/UP-168-P_37c88cf4-a350-4f29-8294-2732e03efd9a_360x.jpg?v=1613559519",
-      "title": "shovel",
-      "desc": "shovel",
-      "price": 500
-    },
-  ]
+  const res = await fetch("https://onlyfarmers.vercel.app/api/getData")
+  const data = await res.json()
+
+  const parsedData: Item[] = data["data"]
+  const items: Item[] = parsedData.filter(item => item.category == category)
 
   return { props: { items } }
 }
