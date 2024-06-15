@@ -53,10 +53,10 @@ const ProductKartButton = ({ item }: ProductKartButtonProps) => {
     return (
         <>
             {inKart &&
-                <button className='flex md:p-2 p-4 bg-green-400 rounded-md font-semibold' onClick={() => { removeFromKart() }}>Remove from Kart 🗑</button>
+                <button className='hover:bg-green-700 flex md:p-2 p-4 bg-green-400 rounded-md font-semibold' onClick={() => { removeFromKart() }}>Remove from Kart 🗑</button>
             }
             {!inKart &&
-                <button className='flex md:p-2 p-4 bg-green-600 rounded-md font-semibold' onClick={() => { addToKart() }}>Add to Kart 🛒</button>
+                <button className='flex md:p-2 p-4 hover:bg-green-700 bg-green-600 rounded-md font-semibold' onClick={() => { addToKart() }}>Add to Kart 🛒</button>
             }
         </>
     )

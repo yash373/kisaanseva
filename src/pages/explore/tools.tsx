@@ -15,7 +15,7 @@ const Tools = ({ items }: ExporeProps) => {
   })
 
   return (
-    <div className='flex flex-col w-full h-full'>
+    <div className='flex space-y-5 flex-col w-full h-full'>
       <Heading text={"Tools ⛏"} />
       <div className="flex flex-col pb-5">
         {items.map((item: ItemProps) => <Item category={item.category} slug={item.slug} desc={item.desc} image={item.image} price={item.price} title={item.title} key={0} />)}

@@ -8,7 +8,7 @@ interface ItemButtonProps {
 const ItemButton = ({ slug }: ItemButtonProps) => {
     return (
         <Link href={`/product/${slug}`}>
-            <button className='flex md:p-2 p-4 bg-green-400 rounded-md font-semibold'>
+            <button className='flex md:p-2 p-4 hover:bg-green-700 bg-green-400 rounded-md font-semibold'>
                 Checkout ☝
             </button>
         </Link>
