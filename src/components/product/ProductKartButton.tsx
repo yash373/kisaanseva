@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { kart } from '@/atoms/kart'
+import { kart } from '@/pages/_app'
 import { useAtom } from 'jotai'
 import { ItemProps } from '@/pages/_app'
 
@@ -9,24 +9,29 @@ interface ProductKartButtonProps {
 
 const ProductKartButton = ({ item }: ProductKartButtonProps) => {
     const [inKart, setInKart] = useState<boolean>(false)
-    const [kartItems, setKartItems] = useAtom(kart)
+    const [kartItems, setKartItems] = useAtom<ItemProps[]>(kart)
 
     useEffect(() => {
-        if (kartItems.includes(item)) {
-            setInKart(true)
+        for (let kartItem of kartItems){
+            if(kartItem.slug == item.slug){
+                setInKart(true)
+            }
         }
-    })
+        console.log(kartItems)
+    }, [kartItems, setInKart])
 
     const addToKart = () => {
         // clone kart items
         let temp: ItemProps[] = kartItems
         temp.push(item)
 
+        // change state
+        setInKart(true)
+
         // setKartItems
         setKartItems(temp)
 
-        // change state
-        setInKart(true)
+        console.log(kartItems)
     }
 
     const removeFromKart = () => {
@@ -36,11 +41,13 @@ const ProductKartButton = ({ item }: ProductKartButtonProps) => {
 
         temp.splice(itemIndex, 1)
 
+        // change state
+        setInKart(false)
+
         // setKartItems
         setKartItems(temp)
 
-        // change state
-        setInKart(false)
+        console.log(kartItems)
     }
 
     return (

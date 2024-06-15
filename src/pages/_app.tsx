@@ -1,6 +1,11 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Footer from "@/components/footer/Footer";
+import { atom } from "jotai";
+
+const kart = atom<ItemProps[]>([])
+
+export { kart }
 
 export interface ItemProps {
   image: string,
