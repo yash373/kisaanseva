@@ -10,7 +10,7 @@ export interface ProductProps {
 
 const Product = ({ item }: ProductProps) => {
   return (
-    <div className='flex flex-col space-x-0 md:space-x-2 space-y-2 md:space-y-0 md:flex-row w-full'>
+    <div className='flex flex-col space-x-0 md:space-x-2 w-full space-y-2 md:space-y-0 md:flex-row md:w-[90vw]'>
       <ProductImage image={item.image} />
       <ProductText item={item} desc={item.desc} price={item.price} title={item.title} />
     </div>

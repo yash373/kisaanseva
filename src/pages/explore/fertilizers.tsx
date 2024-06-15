@@ -15,7 +15,7 @@ const Fertilizers = ({ items }: ExporeProps) => {
   })
 
   return (
-    <div className='flex flex-col w-full h-full'>
+    <div className='flex flex-col w-full md:w-[90vw] h-full'>
       <Heading text={"Fertilizers 💉"} />
       <div className="flex flex-col space-y-5 pb-5">
         {items.map((item: ItemProps) => <Item category={item.category} slug={item.slug} desc={item.desc} image={item.image} price={item.price} title={item.title} key={0} />)}

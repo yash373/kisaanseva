@@ -10,7 +10,7 @@ const Kart = () => {
   const [kartItems, setKartItems] = useAtom(kart)
 
   return (
-    <div className='flex flex-col w-full h-full'>
+    <div className='flex flex-col w-full md:w-[90vw] h-full'>
       <Heading text={"Kart 🛒"} />
       {
         kartItems && <div className="flex space-y-5 flex-col pb-5">
