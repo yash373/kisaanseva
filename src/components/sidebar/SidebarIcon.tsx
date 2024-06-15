@@ -5,10 +5,9 @@ interface SidebarIconProps {
     icon: ReactElement,
     text: string,
     link: string,
-    color: string
 }
 
-const SidebarIcon = ({ icon, text, link, color }: SidebarIconProps) => {
+const SidebarIcon = ({ icon, text, link }: SidebarIconProps) => {
     return (
         <Link className='relative flex items-center justify-center 
                h-12 w-12 mt-2 mb-2 mx-auto shadow-lg
