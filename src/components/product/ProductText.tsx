@@ -11,7 +11,7 @@ interface ProductTextProps {
 
 const ProductText = ({ title, desc, price, item }: ProductTextProps) => {
     return (
-        <div className='flex flex-col m-5'>
+        <div className='flex flex-col space-y-5 m-5'>
             <p className='text-3xl font-extrabold capitalize'>{title}</p>
             <p className='text-3xl font-semibold'>{desc}</p>
             <p className='text-3xl'>₹ {price}</p>
