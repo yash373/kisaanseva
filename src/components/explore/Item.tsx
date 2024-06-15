@@ -3,22 +3,22 @@ import ItemIMG from './ItemIMG'
 import ItemTitle from './ItemTitle'
 import ItemDesc from './ItemDesc'
 import ItemPrice from './ItemPrice'
+import { ItemProps } from '@/pages/_app'
+import ItemButton from './ItemButton'
 
-export interface ItemProps {
-    image: string,
-    title: string,
-    desc: string,
-    price: number
-}
-
-const Item = ({ image, title, desc, price }: ItemProps) => {
+const Item = ({ image, title, desc, price, slug }: ItemProps) => {
     return (
         <div className='flex w-[90vw] mx-auto h-auto justify-center text-left'>
             <ItemIMG img={image} />
             <div className='flex flex-col w-[75vw] mt-5'>
-                <ItemTitle title={title} />
-                <ItemPrice price={price} />
-                <ItemDesc desc={desc} />
+                <div className='flex flex-col'>
+                    <ItemTitle title={title} />
+                    <ItemPrice price={price} />
+                    <ItemDesc desc={desc} />
+                </div>
+                <div className='flex mt-4'>
+                    <ItemButton slug={slug} />
+                </div>
             </div>
         </div>
     )
