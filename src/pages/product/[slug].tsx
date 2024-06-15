@@ -1,17 +1,10 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import { GetServerSideProps } from 'next'
-
-export interface Item {
-  image: string,
-  title: string,
-  price: number,
-  category: string,
-  desc: string
-}
+import { ItemProps } from '../_app'
 
 export interface ProductProps {
-  items: Item[]
+  items: ItemProps[]
 }
 
 const Product = ({ items }: ProductProps) => {
@@ -25,11 +18,11 @@ const Product = ({ items }: ProductProps) => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps<{ items: Item[] }> = async (context) => {
+export const getServerSideProps: GetServerSideProps<{ items: ItemProps[] }> = async (context) => {
   const res = await fetch("https://onlyfarmers.vercel.app/api/getData")
   const data = await res.json()
 
-  const items: Item[] = data["data"]
+  const items: ItemProps[] = data["data"]
 
   return { props: { items } }
 }
