@@ -9,7 +9,7 @@ const Navigation = () => {
         <Button color={false} link='/explore/seeds' text='buy seeds' />
         <Button color={false} link='/explore/fertilizers' text='buy fertilizers' />
         <Button color={false} link='/explore/pesticides' text='buy pesticides' />
-        <Button color={true} link='/cart' text='Check Cart' />
+        <Button color={true} link='/kart' text='Check Kart' />
         <Button color={true} link='/checkout' text='Checkout' />
         <Button color={true} link='/about' text='About OnlyFarmers' />
         <Button color={true} link='/help' text='Contact Help' />
