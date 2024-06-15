@@ -1,30 +1,34 @@
 import React from 'react'
-import { useRouter } from 'next/router'
 import { GetServerSideProps } from 'next'
 import { ItemProps } from '../_app'
+import ProductImage from '@/components/product/ProductImage'
+
 
 export interface ProductProps {
-  items: ItemProps[]
+  item: ItemProps
 }
 
-const Product = ({ items }: ProductProps) => {
-  const router = useRouter()
-  const slug = router.query.slug
-
+const Product = ({ item }: ProductProps) => {
   return (
-    <div>
-      {slug}
+    <div className='flex w-full'>
+      <ProductImage image={item.image} />
     </div>
   )
 }
 
-export const getServerSideProps: GetServerSideProps<{ items: ItemProps[] }> = async (context) => {
+export const getServerSideProps: GetServerSideProps<{ item: ItemProps }> = async (context) => {
   const res = await fetch("https://onlyfarmers.vercel.app/api/getData")
   const data = await res.json()
 
+  const slug = context.query["slug"]
+
   const items: ItemProps[] = data["data"]
 
-  return { props: { items } }
+  const item: ItemProps = items.filter(i => i.slug == slug)[0]
+
+  console.log(item)
+
+  return { props: { item } }
 }
 
 export default Product
