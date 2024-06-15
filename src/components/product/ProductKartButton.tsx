@@ -12,8 +12,8 @@ const ProductKartButton = ({ item }: ProductKartButtonProps) => {
     const [kartItems, setKartItems] = useAtom<ItemProps[]>(kart)
 
     useEffect(() => {
-        for (let kartItem of kartItems){
-            if(kartItem.slug == item.slug){
+        for (let kartItem of kartItems) {
+            if (kartItem.slug == item.slug) {
                 setInKart(true)
             }
         }
@@ -53,10 +53,10 @@ const ProductKartButton = ({ item }: ProductKartButtonProps) => {
     return (
         <>
             {inKart &&
-                <button className='hover:bg-green-700 flex md:p-2 p-4 bg-green-400 rounded-md font-semibold' onClick={() => { removeFromKart() }}>Remove from Kart 🗑</button>
+                <button className='md:w-auto w-[40vh] text-center mx-auto hover:bg-green-700 flex md:p-2 p-4 bg-green-400 rounded-md font-semibold' onClick={() => { removeFromKart() }}><p className='text-center w-full'> Remove from Kart 🗑</p></button>
             }
             {!inKart &&
-                <button className='flex md:p-2 p-4 hover:bg-green-700 bg-green-600 rounded-md font-semibold' onClick={() => { addToKart() }}>Add to Kart 🛒</button>
+                <button className='md:w-auto w-[40vh] flex md:p-2 p-4 hover:bg-green-700 bg-green-600 rounded-md font-semibold mx-auto' onClick={() => { addToKart() }}><p className='w-full text-center'>Add to Kart 🛒</p></button>
             }
         </>
     )
