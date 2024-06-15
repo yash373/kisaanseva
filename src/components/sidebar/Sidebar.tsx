@@ -11,9 +11,9 @@ const Sidebar = () => {
         <div className='justify-center fixed top-0 left-0 h-screen w-[5vw] m-0
                     flex flex-col 
                     bg-gray-900 text-white shadow-lg'>
-            <SidebarIcon icon={<FaShoppingCart />} text="Check Kart" link="/kart" />
             <SidebarIcon icon={<FaTractor />} text="Buy Tools" link="/explore/tools" />
             <SidebarIcon icon={<FaSeedling />} text="Buy Seeds" link="/explore/seeds" />
+            <SidebarIcon icon={<FaShoppingCart />} text="Check Kart" link="/kart" />
             <SidebarIcon icon={<FaSprayCan />} text="Buy Fertilizers" link="/explore/fertilizers" />
             <SidebarIcon icon={<MdPestControlRodent />} text="Buy Pesticides" link="/explore/pesticides" />
         </div>
