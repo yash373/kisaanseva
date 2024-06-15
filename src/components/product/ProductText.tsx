@@ -1,17 +1,21 @@
 import React from 'react'
+import { ItemProps } from '@/pages/_app'
+import ProductKartButton from './ProductKartButton'
 
 interface ProductTextProps {
     title: string,
     desc: string,
-    price: number
+    price: number,
+    item: ItemProps
 }
 
-const ProductText = ({ title, desc, price }: ProductTextProps) => {
+const ProductText = ({ title, desc, price, item }: ProductTextProps) => {
     return (
         <div className='flex flex-col m-5'>
             <p className='text-3xl font-extrabold capitalize'>{title}</p>
             <p className='text-3xl font-semibold'>{desc}</p>
             <p className='text-3xl'>₹ {price}</p>
+            <ProductKartButton item={item} />
         </div>
     )
 }
