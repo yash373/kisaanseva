@@ -8,7 +8,7 @@ import ItemButton from './ItemButton'
 
 const Item = ({ image, title, desc, price, slug }: ItemProps) => {
     return (
-        <div className='flex w-[90vw] mx-auto h-auto justify-center text-left'>
+        <div className='flex w-[90vw] h-[40vh] mx-auto justify-center text-left'>
             <ItemIMG img={image} />
             <div className='flex flex-col w-[75vw] mt-5'>
                 <div className='flex flex-col'>
