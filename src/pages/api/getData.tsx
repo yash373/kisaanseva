@@ -90,15 +90,47 @@ export default function handler(
                 "category": "seeds",
                 "slug": "sunflower",
                 "price": 80
-            },                                    
-            {
-                "image": "https://gizacon.com/cdn/shop/products/UP-168-P_37c88cf4-a350-4f29-8294-2732e03efd9a_360x.jpg?v=1613559519",
-                "title": "shovel",
-                "desc": "shovel",
-                "slug": "shovelfertilizers",
-                "category": "fertilizers",
-                "price": 500
             },
+            {
+                "image": "https://st3.depositphotos.com/3997585/16413/i/450/depositphotos_164139232-stock-photo-close-up-of-urea-fertilizer.jpg",
+                "title": "Urea",
+                "desc": "Urea is a nitrogenous fertilizer widely used in agriculture to enhance plant growth and yield.",
+                "category": "fertilizers",
+                "slug": "urea",
+                "price": 20
+            },
+            {
+                "image": "https://5.imimg.com/data5/ANDROID/Default/2022/2/FX/MH/HS/23336035/product-jpeg-500x500.jpg",
+                "title": "DAP",
+                "desc": "Di-Ammonium Phosphate (DAP) is a popular fertilizer containing nitrogen and phosphorus, crucial for plant development.",
+                "category": "fertilizers",
+                "slug": "dap",
+                "price": 25
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/41tXS6e+RrL.jpg",
+                "title": "MOP",
+                "desc": "Muriate of Potash (MOP) is a potassium-rich fertilizer essential for improving crop quality and yield.",
+                "category": "fertilizers",
+                "slug": "mop",
+                "price": 22
+            },
+            {
+                "image": "https://4.imimg.com/data4/HT/WB/MY-8375560/single-super-phosphate-fertilizer.jpg",
+                "title": "Superphosphate",
+                "desc": "Superphosphate is a phosphate fertilizer that promotes root growth and flowering in plants.",
+                "category": "fertilizers",
+                "slug": "superphosphate",
+                "price": 18
+            },
+            {
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwPPcJk0w5Mg90hk3yA_Pp-VfFMICPgR_pg&s",
+                "title": "NPK",
+                "desc": "NPK fertilizer provides a balanced supply of nitrogen, phosphorus, and potassium, essential nutrients for healthy plant growth.",
+                "category": "fertilizers",
+                "slug": "npk",
+                "price": 30
+            },                        
             {
                 "image": "https://gizacon.com/cdn/shop/products/UP-168-P_37c88cf4-a350-4f29-8294-2732e03efd9a_360x.jpg?v=1613559519",
                 "title": "shovel",
