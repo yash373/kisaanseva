@@ -2,7 +2,7 @@ import React from 'react'
 import { GetServerSideProps } from 'next'
 import { ItemProps } from '../_app'
 import ProductImage from '@/components/product/ProductImage'
-
+import ProductText from '@/components/product/ProductText'
 
 export interface ProductProps {
   item: ItemProps
@@ -12,6 +12,7 @@ const Product = ({ item }: ProductProps) => {
   return (
     <div className='flex w-full'>
       <ProductImage image={item.image} />
+      <ProductText desc={item.desc} price={item.price} title={item.title} />
     </div>
   )
 }
