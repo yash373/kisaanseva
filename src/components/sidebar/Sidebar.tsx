@@ -6,7 +6,9 @@ import {FaYoutube,FaFacebookF} from "react-icons/fa"
 
 const Sidebar = () => {
     return (
-        <div className='fixed top-1/3 right-0 rounded-tl-lg rounded-bl-lg w-16 flex flex-col bg-white shadow-lg'>
+        <div className='justify-center fixed top-0 left-0 h-screen w-[5vw] m-0
+                    flex flex-col 
+                    bg-gray-900 text-white shadow-lg'>
             <SidebarIcon icon={<FiPhoneCall/>} text="Contact Us Through Phone" link="tel:9739500393" color="bg-blue-500" />
             <SidebarIcon icon={<FiPhoneCall/>} text="Contact Us Through Phone" link="tel:9739500393" color="bg-blue-500" />
             <SidebarIcon icon={<FiPhoneCall/>} text="Contact Us Through Phone" link="tel:9739500393" color="bg-blue-500" />

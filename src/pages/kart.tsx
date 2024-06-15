@@ -17,7 +17,7 @@ const Kart = () => {
   })
 
   return (
-    <div className='flex flex-col w-full md:w-[90vw] h-full'>
+    <div className='flex flex-col w-full md:w-[95vw] ml-auto h-full'>
       <Heading text={"Kart 🛒"} />
       {
         !isKartEmpty && <div className="flex space-y-5 flex-col pb-5">

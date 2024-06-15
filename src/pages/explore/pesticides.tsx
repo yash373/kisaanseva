@@ -15,7 +15,7 @@ const Pesticides = ({ items }: ExporeProps) => {
   })
 
   return (
-    <div className='flex flex-col w-full md:w-[90vw] h-full'>
+    <div className='flex flex-col w-full md:w-[95vw] ml-auto h-full'>
       <Heading text={"Pesticides 🧪"} />
       <div className="flex space-y-5 flex-col pb-5">
         {items.map((item: ItemProps) => <Item category={item.category} slug={item.slug} desc={item.desc} image={item.image} price={item.price} title={item.title} key={0} />)}
