@@ -3,7 +3,6 @@ import type { AppProps } from "next/app";
 import Footer from "@/components/footer/Footer";
 import { atom } from "jotai";
 import Sidebar from "@/components/sidebar/Sidebar";
-import { BrowserView } from "react-device-detect";
 import { useEffect, useState } from "react";
 
 const kart = atom<ItemProps[]>([])
