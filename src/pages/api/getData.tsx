@@ -100,7 +100,7 @@ export default function handler(
                 "price": 20
             },
             {
-                "image": "https://5.imimg.com/data5/ANDROID/Default/2022/2/FX/MH/HS/23336035/product-jpeg-500x500.jpg",
+                "image": "https://www.shutterstock.com/image-photo/18460-diammonium-phosphate-dap-fertilizers-600nw-1006955722.jpg",
                 "title": "DAP",
                 "desc": "Di-Ammonium Phosphate (DAP) is a popular fertilizer containing nitrogen and phosphorus, crucial for plant development.",
                 "category": "fertilizers",
