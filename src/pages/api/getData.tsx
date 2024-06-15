@@ -130,15 +130,48 @@ export default function handler(
                 "category": "fertilizers",
                 "slug": "npk",
                 "price": 30
-            },                        
-            {
-                "image": "https://gizacon.com/cdn/shop/products/UP-168-P_37c88cf4-a350-4f29-8294-2732e03efd9a_360x.jpg?v=1613559519",
-                "title": "shovel",
-                "desc": "shovel",
-                "category": "pesticides",
-                "slug": "shovelpesticides",
-                "price": 500
             },
+
+            {
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXgJemjjmXk9JzGyfM47eatfx4Wb_6DeN1XQ&s",
+                "title": "Glyphosate",
+                "desc": "Glyphosate is a broad-spectrum herbicide effective against a wide range of weeds, widely used in agriculture.",
+                "category": "pesticides",
+                "slug": "glyphosate",
+                "price": 150
+            },
+            {
+                "image": "https://5.imimg.com/data5/SELLER/Default/2022/12/QQ/YZ/RX/64476877/tricel-chlorpyrifos-insecticide.jpg",
+                "title": "Chlorpyrifos",
+                "desc": "Chlorpyrifos is an insecticide used to control pests in crops such as cereals, fruit, and vegetables.",
+                "category": "pesticides",
+                "slug": "chlorpyrifos",
+                "price": 250
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/61TC-HmkWCL.jpg",
+                "title": "Neem Oil",
+                "desc": "Neem oil is a natural pesticide extracted from the seeds of the neem tree, effective against a variety of pests.",
+                "category": "pesticides",
+                "slug": "neem-oil",
+                "price": 80
+            },
+            {
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwJZzHsHarhQvbdzPDO04vTpJ1CQ0qgC4Hjg&s",
+                "title": "Bacillus thuringiensis (Bt)",
+                "desc": "Bacillus thuringiensis (Bt) is a biological pesticide that targets certain insect larvae, used in organic farming.",
+                "category": "pesticides",
+                "slug": "bt",
+                "price": 200
+            },
+            {
+                "image": "https://cpimg.tistatic.com/01471016/b/4/METHYL-PARATHION-50-EC.jpg",
+                "title": "Methyl Parathion",
+                "desc": "Methyl parathion is an organophosphate insecticide used to control pests in various crops.",
+                "category": "pesticides",
+                "slug": "methyl-parathion",
+                "price": 180
+            }
         ]
     })
 }
