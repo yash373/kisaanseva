@@ -20,7 +20,7 @@ const Sidebar = () => {
             <SidebarIcon icon={<RiGovernmentFill />} text="Government Schemes" link="/governmentschemes" />
             <SidebarIcon icon={<GiTrade />} text="Sell Your Produce" link="/sellproduce" />
             <SidebarIcon icon={<VscDebugDisconnect />} text="Connect To Market" link="/connecttomarket" />
-            <SidebarIcon icon={<FaTruck />} text="Connect to Transport" link="/connecttomarket" />
+            <SidebarIcon icon={<FaTruck />} text="Connect to Transport" link="/connecttotransport" />
             <SidebarIcon icon={<FaShoppingCart />} text="Check Kart" link="/kart" />
             <SidebarIcon icon={<FaTractor />} text="Buy Tools" link="/explore/tools" />
             <SidebarIcon icon={<FaSeedling />} text="Buy Seeds" link="/explore/seeds" />
