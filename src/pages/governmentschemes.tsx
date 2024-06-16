@@ -10,6 +10,7 @@ const GovernmentSchemes = () => {
       <Scheme link='https://www.myscheme.gov.in/schemes/kcc' name='Kisan Credit Card (KCC) Scheme' desc="a credit scheme to provide timely and adequate credit to farmers" />
       <Scheme link='https://www.pmksy.gov.in/' name='Pradhan Mantri Krishi Sinchai Yojana (PMKSY)' desc="a scheme to enhance irrigation coverage and water use efficiency" />
       <Scheme link='https://nmsa.dac.gov.in/' name='National Mission for Sustainable Agriculture (NMSA)' desc="a scheme to promote sustainable and climate-resilient agriculture" />
+      <Scheme link='https://www.myscheme.gov.in/schemes/pkvy' name='Paramparagat Krishi Vikas Yojana (PKVY)' desc="a scheme to promote organic farming and soil health" />
     </div>
   )
 }
