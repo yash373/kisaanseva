@@ -5,9 +5,9 @@ import { useEffect } from 'react'
 const Complains = () => {
     const router = useRouter()
 
-    useEffect(()=>{
+    const reroute = () => {
         router.push("https://pgportal.gov.in/")
-    })
+    }
 
     return (
         <div className='text-center'>
