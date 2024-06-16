@@ -33,23 +33,25 @@ export default function App({ Component, pageProps }: AppProps) {
         ? false
         : true;
 
-  useEffect(()=>{
+  useEffect(() => {
     if (detectDeviceType()) {
       setIsPC(true)
     }
   })
 
   return (
-    <div className="flex flex-col bg-slate-950 text-white justify-center items-center h-full">
+    <div className="flex flex-col justify-center items-center h-full">
       <Head>
         <title>Onlyfamers</title>
-        <link rel="icon" type="image/png" href="/Onlyfarmers.ico"/>
+        <link rel="icon" type="image/png" href="/Onlyfarmers.ico" />
       </Head>
-      <div className="flex w-full h-[90vh] overflow-y-auto">
-        <Component {...pageProps} />
+      <div className="flex flex-row">
         {isPC && <Sidebar />}
+        <div className="flex">
+          <Component {...pageProps} />
+        </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

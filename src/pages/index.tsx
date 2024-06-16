@@ -4,9 +4,9 @@ import { useRouter } from 'next/router'
 const Home = () => {
   const router = useRouter()
 
-  useEffect(()=>{
-    router.push("/navigation")
-  })
+  // useEffect(()=>{
+  //   router.push("/navigation")
+  // })
 
   return (
     <div>
