@@ -7,6 +7,8 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import Navbar from "@/components/navbar/Navbar";
 
+// made website fast
+
 const kart = atom<ItemProps[]>([])
 
 export { kart }
