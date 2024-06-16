@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
+import Page from '@/components/reroute/Page'
 
 const MSP = () => {
     const router = useRouter()
@@ -10,9 +10,7 @@ const MSP = () => {
     }
     
     return (
-        <div className=''>
-            you are currently being redirected to another website
-        </div>
+        <Page operation={reroute} img='https://cprindia.org/sites/default/files/news/CPR_news_header_template_44.jpg' title='Know Your Minimum Selling Price' />
     )
 }
 
