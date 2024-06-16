@@ -10,6 +10,7 @@ import { RiGovernmentFill } from "react-icons/ri";
 import { GiTrade } from "react-icons/gi";
 import { VscDebugDisconnect } from "react-icons/vsc";
 import { FaTruck } from "react-icons/fa";
+import { FaShield } from "react-icons/fa6";
 
 const Sidebar = () => {
     return (
@@ -21,6 +22,7 @@ const Sidebar = () => {
             <SidebarIcon icon={<GiTrade />} text="Sell Your Produce" link="/sellproduce" />
             <SidebarIcon icon={<VscDebugDisconnect />} text="Connect To Market" link="/connecttomarket" />
             <SidebarIcon icon={<FaTruck />} text="Connect to Transport" link="/connecttotransport" />
+            <SidebarIcon icon={<FaShield />} text="Connect to Insurance Companies" link="/insurancecompanies" />
             <SidebarIcon icon={<FaShoppingCart />} text="Check Kart" link="/kart" />
             <SidebarIcon icon={<FaTractor />} text="Buy Tools" link="/explore/tools" />
             <SidebarIcon icon={<FaSeedling />} text="Buy Seeds" link="/explore/seeds" />
