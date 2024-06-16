@@ -1,5 +1,4 @@
 import React from 'react'
-import Scheme from '@/components/governmentschemes/Scheme'
 import Heading from '@/components/explore/Heading'
 import Association from '@/components/connecttomarket/Association'
 
