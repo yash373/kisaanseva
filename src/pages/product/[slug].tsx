@@ -1,5 +1,7 @@
 import React from 'react'
 import { GetServerSideProps } from 'next'
+import { GetStaticProps } from 'next'
+import { GetStaticPaths } from "next"
 import { ItemProps } from '../_app'
 import ProductImage from '@/components/product/ProductImage'
 import ProductText from '@/components/product/ProductText'
@@ -20,11 +22,42 @@ const Product = ({ item }: ProductProps) => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps<{ item: ItemProps }> = async (context) => {
+export const getStaticPaths = (async () => {
+  const res = await fetch("https://onlyfarmers.vercel.app/api/getData")
+  const data = await res.json()
+  const items: ItemProps[] = data["data"]
+
+  let slugs: string[] = []
+
+  for (let item of items) {
+    slugs.push(item.slug)
+  }
+
+  interface param {
+    slug: string
+  }
+
+  interface path {
+    params: param
+  }
+
+  let PATHS:path[] = []
+
+  for (let slug of slugs){
+    PATHS.push({params:{slug}})
+  }
+
+  return {
+    paths: PATHS,
+    fallback: true, // false or "blocking"
+  }
+})
+
+export const getStaticProps: GetStaticProps<{ item: ItemProps }> = async (context) => {
   const res = await fetch("https://onlyfarmers.vercel.app/api/getData")
   const data = await res.json()
 
-  const slug = context.query["slug"]
+  const slug = context.params?.slug as string
 
   const items: ItemProps[] = data["data"]
 
