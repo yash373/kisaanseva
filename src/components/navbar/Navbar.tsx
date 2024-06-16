@@ -8,12 +8,13 @@ const Navbar = () => {
             <Logo />
             <div className='flex flex-wrap w-full h-1/2 justify-evenly'>
                 <NavbarButton name='Home 🏠' link='/' />
+                <NavbarButton name='Government Schemes 💼' link='/governmentschemes' />
+                <NavbarButton name='Sell Produce 💰' link='/sellproduce' />
+                <NavbarButton name='Kart 🛒' link='/' />
                 <NavbarButton name='Buy Tools ⛏' link='/explore/tools' />
                 <NavbarButton name='Buy Seeds 🌱' link='/explore/seeds' />
                 <NavbarButton name='Buy Fertilizers 💉' link='/explore/fertilizers' />
                 <NavbarButton name='Buy Pesticides 🧪' link='/explore/pesticides' />
-                <NavbarButton name='Government Schemes 💼' link='/governmentschemes' />
-                <NavbarButton name='Kart 🛒' link='/' />
             </div>
         </div>
     )

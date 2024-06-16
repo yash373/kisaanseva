@@ -7,6 +7,7 @@ import { FaSprayCan } from "react-icons/fa6";
 import { MdPestControlRodent } from "react-icons/md";
 import { IoMdHome } from "react-icons/io";
 import { RiGovernmentFill } from "react-icons/ri";
+import { GiTrade } from "react-icons/gi";
 
 const Sidebar = () => {
     return (
@@ -15,9 +16,10 @@ const Sidebar = () => {
                     shadow-lg'>
             <SidebarIcon icon={<IoMdHome />} text="Home" link="/" />
             <SidebarIcon icon={<RiGovernmentFill />} text="Government Schemes" link="/governmentschemes" />
+            <SidebarIcon icon={<GiTrade />} text="Sell Your Produce" link="/sellproduce" />
+            <SidebarIcon icon={<FaShoppingCart />} text="Check Kart" link="/kart" />
             <SidebarIcon icon={<FaTractor />} text="Buy Tools" link="/explore/tools" />
             <SidebarIcon icon={<FaSeedling />} text="Buy Seeds" link="/explore/seeds" />
-            <SidebarIcon icon={<FaShoppingCart />} text="Check Kart" link="/kart" />
             <SidebarIcon icon={<FaSprayCan />} text="Buy Fertilizers" link="/explore/fertilizers" />
             <SidebarIcon icon={<MdPestControlRodent />} text="Buy Pesticides" link="/explore/pesticides" />
         </div>
