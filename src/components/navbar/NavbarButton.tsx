@@ -8,8 +8,10 @@ interface NavbarButtonProps {
 
 const NavbarButton = ({ name, link }: NavbarButtonProps) => {
     return (
-        <Link className='font-semibold w-36 hover:bg-green-500 text-center rounded-md' href={link}>
-            {name}
+        <Link className='font-semibold flex w-36 hover:bg-green-500 text-center rounded-md' href={link}>
+            <p className='my-auto mx-auto'>
+                {name}
+            </p>
         </Link>
     )
 }
