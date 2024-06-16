@@ -12,7 +12,7 @@ const Navbar = () => {
                 <NavbarButton name='Buy Seeds 🌱' link='/explore/seeds' />
                 <NavbarButton name='Buy Fertilizers 💉' link='/explore/fertilizers' />
                 <NavbarButton name='Buy Pesticides 🧪' link='/explore/pesticides' />
-                <NavbarButton name='Government Schemes 💼' link='/' />
+                <NavbarButton name='Government Schemes 💼' link='/governmentschemes' />
                 <NavbarButton name='Kart 🛒' link='/' />
             </div>
         </div>

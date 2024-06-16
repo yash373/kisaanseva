@@ -14,7 +14,7 @@ const Sidebar = () => {
                     flex flex-col sticky
                     shadow-lg'>
             <SidebarIcon icon={<IoMdHome />} text="Home" link="/" />
-            <SidebarIcon icon={<RiGovernmentFill />} text="Government Schemes" link="/" />
+            <SidebarIcon icon={<RiGovernmentFill />} text="Government Schemes" link="/governmentschemes" />
             <SidebarIcon icon={<FaTractor />} text="Buy Tools" link="/explore/tools" />
             <SidebarIcon icon={<FaSeedling />} text="Buy Seeds" link="/explore/seeds" />
             <SidebarIcon icon={<FaShoppingCart />} text="Check Kart" link="/kart" />
