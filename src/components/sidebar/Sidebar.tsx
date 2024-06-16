@@ -8,6 +8,7 @@ import { MdPestControlRodent } from "react-icons/md";
 import { IoMdHome } from "react-icons/io";
 import { RiGovernmentFill } from "react-icons/ri";
 import { GiTrade } from "react-icons/gi";
+import { VscDebugDisconnect } from "react-icons/vsc";
 
 const Sidebar = () => {
     return (
@@ -17,6 +18,7 @@ const Sidebar = () => {
             <SidebarIcon icon={<IoMdHome />} text="Home" link="/" />
             <SidebarIcon icon={<RiGovernmentFill />} text="Government Schemes" link="/governmentschemes" />
             <SidebarIcon icon={<GiTrade />} text="Sell Your Produce" link="/sellproduce" />
+            <SidebarIcon icon={<VscDebugDisconnect />} text="Connect To Market" link="/connecttomarket" />
             <SidebarIcon icon={<FaShoppingCart />} text="Check Kart" link="/kart" />
             <SidebarIcon icon={<FaTractor />} text="Buy Tools" link="/explore/tools" />
             <SidebarIcon icon={<FaSeedling />} text="Buy Seeds" link="/explore/seeds" />
