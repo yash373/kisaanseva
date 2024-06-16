@@ -15,6 +15,7 @@ const Navbar = () => {
                 <NavbarButton name='Insurance Schemes 🛡' link='/insurancecompanies' />
                 <NavbarButton name='Know Your MSP 🌾' link='/msp' />
                 <NavbarButton name='Get Help 🔴' link='/helpline' />
+                <NavbarButton name='File Your Complaint 📃' link='/complains' />
                 <NavbarButton name='Kart 🛒' link='/' />
                 <NavbarButton name='Buy Tools ⛏' link='/explore/tools' />
                 <NavbarButton name='Buy Seeds 🌱' link='/explore/seeds' />
