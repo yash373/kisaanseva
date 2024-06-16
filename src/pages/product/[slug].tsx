@@ -22,36 +22,22 @@ const Product = ({ item }: ProductProps) => {
   )
 }
 
-export const getStaticPaths = (async () => {
-  const res = await fetch("https://onlyfarmers.vercel.app/api/getData")
+// This function gets called at build time
+export async function getStaticPaths() {
+  // Call an external API endpoint to get posts
+  const res = await fetch('https://onlyfarmers.vercel.app/api/getData')
   const data = await res.json()
   const items: ItemProps[] = data["data"]
 
-  let slugs: string[] = []
-
-  for (let item of items) {
-    slugs.push(item.slug)
-  }
-
-  interface param {
-    slug: string
-  }
-
-  interface path {
-    params: param
-  }
-
-  let PATHS:path[] = []
-
-  for (let slug of slugs){
-    PATHS.push({params:{slug}})
-  }
-
-  return {
-    paths: PATHS,
-    fallback: true, // false or "blocking"
-  }
-})
+  // Get the paths we want to pre-render based on posts
+  const paths = items.map((item) => ({
+    params: { slug: item.slug },
+  }))
+ 
+  // We'll pre-render only these paths at build time.
+  // { fallback: false } means other routes should 404.
+  return { paths, fallback: false }
+}
 
 export const getStaticProps: GetStaticProps<{ item: ItemProps }> = async (context) => {
   const res = await fetch("https://onlyfarmers.vercel.app/api/getData")

@@ -20,20 +20,20 @@ export default function handler(
                 "price": 799
             },
             {
-                title: "Spade",
-                desc: "Similar to a shovel, used for digging and turning soil.",
-                category: "tools",
-                slug: "spade",
-                price: 799,
-                image: "https://5.imimg.com/data5/SELLER/Default/2023/10/353897278/LN/JU/GD/30387361/wooden-handle-garden-spade.jpg"
+                "title": "Spade",
+                "desc": "Similar to a shovel, used for digging and turning soil.",
+                "category": "tools",
+                "slug": "spade",
+                "price": 799,
+                "image": "https://5.imimg.com/data5/SELLER/Default/2023/10/353897278/LN/JU/GD/30387361/wooden-handle-garden-spade.jpg"
             },
             {
-                title: "rake",
-                desc: "Used for leveling soil, collecting leaves, and removing debris.",
-                category: "tools",
-                slug: "rake",
-                price: 699,
-                image: "https://m.media-amazon.com/images/I/61VaZBaQZUL._AC_UF1000,1000_QL80_.jpg"
+                "title": "rake",
+                "desc": "Used for leveling soil, collecting leaves, and removing debris.",
+                "category": "tools",
+                "slug": "rake",
+                "price": 699,
+                "image": "https://m.media-amazon.com/images/I/61VaZBaQZUL._AC_UF1000,1000_QL80_.jpg"
             },
             {
                 "title": "bolo",
