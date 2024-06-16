@@ -24,7 +24,7 @@ const Fertilizers = ({ items }: ExporeProps) => {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch("https://onlyfarmers.vercel.app/api/getData")
   const data = await res.json()
 
