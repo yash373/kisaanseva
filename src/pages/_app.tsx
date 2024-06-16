@@ -40,18 +40,18 @@ export default function App({ Component, pageProps }: AppProps) {
   })
 
   return (
-    <div className="flex flex-col justify-center items-center h-full">
+    <>
       <Head>
         <title>Onlyfamers</title>
         <link rel="icon" type="image/png" href="/Onlyfarmers.ico" />
       </Head>
-      <div className="flex flex-row">
+      <div className="flex md:space-x-5">
         {isPC && <Sidebar />}
-        <div className="flex">
+        <div className="flex md:w-[94vw]">
           <Component {...pageProps} />
         </div>
       </div>
       {/* <Footer /> */}
-    </div>
+    </>
   )
 }

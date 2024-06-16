@@ -9,8 +9,8 @@ import { IoMdHome } from "react-icons/io";
 
 const Sidebar = () => {
     return (
-        <div className='justify-center fixed top-0 left-0 h-screen w-[8vw] m-0
-                    flex flex-col 
+        <div className='justify-center top-0 left-0 h-screen w-[6vw] m-0
+                    flex flex-col sticky
                     shadow-lg'>
             <SidebarIcon icon={<IoMdHome />} text="Home" link="/" />
             <SidebarIcon icon={<FaTractor />} text="Buy Tools" link="/explore/tools" />
