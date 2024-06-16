@@ -11,6 +11,7 @@ import { GiTrade } from "react-icons/gi";
 import { VscDebugDisconnect } from "react-icons/vsc";
 import { FaTruck } from "react-icons/fa";
 import { FaShield } from "react-icons/fa6";
+import { GiMoneyStack } from "react-icons/gi";
 
 const Sidebar = () => {
     return (
@@ -23,6 +24,7 @@ const Sidebar = () => {
             <SidebarIcon icon={<VscDebugDisconnect />} text="Connect To Market" link="/connecttomarket" />
             <SidebarIcon icon={<FaTruck />} text="Connect to Transport" link="/connecttotransport" />
             <SidebarIcon icon={<FaShield />} text="Get Insurance Schemes" link="/insurancecompanies" />
+            <SidebarIcon icon={<GiMoneyStack />} text="Know Your MSP" link="/msp" />
             <SidebarIcon icon={<FaShoppingCart />} text="Check Kart" link="/kart" />
             <SidebarIcon icon={<FaTractor />} text="Buy Tools" link="/explore/tools" />
             <SidebarIcon icon={<FaSeedling />} text="Buy Seeds" link="/explore/seeds" />
