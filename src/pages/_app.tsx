@@ -4,6 +4,7 @@ import Footer from "@/components/footer/Footer";
 import { atom } from "jotai";
 import Sidebar from "@/components/sidebar/Sidebar";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 const kart = atom<ItemProps[]>([])
 
@@ -40,6 +41,10 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <div className="flex flex-col bg-slate-950 text-white justify-center items-center h-full">
+      <Head>
+        <title>Onlyfamers</title>
+        <link rel="icon" type="image/png" href="/Onlyfarmers.ico"/>
+      </Head>
       <div className="flex w-full h-[90vh] overflow-y-auto">
         <Component {...pageProps} />
         {isPC && <Sidebar />}
