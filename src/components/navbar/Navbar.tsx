@@ -13,6 +13,7 @@ const Navbar = () => {
                 <NavbarButton name='Connect To Market 🤝' link='/connecttomarket' />
                 <NavbarButton name='Connect To Transport 🚚' link='/connecttotransport' />
                 <NavbarButton name='Insurance Schemes 🛡' link='/insurancecompanies' />
+                <NavbarButton name='Know Your MSP 🌾' link='/msp' />
                 <NavbarButton name='Kart 🛒' link='/' />
                 <NavbarButton name='Buy Tools ⛏' link='/explore/tools' />
                 <NavbarButton name='Buy Seeds 🌱' link='/explore/seeds' />
