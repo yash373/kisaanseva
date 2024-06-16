@@ -5,9 +5,9 @@ import { useEffect } from 'react'
 const SellProduce = () => {
     const router = useRouter()
 
-    useEffect(()=>{
+    const reroute = () => {
         router.push("https://enam.gov.in/web/stakeholders-Involved/farmers")
-    })
+    }
 
     return (
         <div className='text-center'>
