@@ -6,6 +6,7 @@ import { FaTractor } from "react-icons/fa6";
 import { FaSprayCan } from "react-icons/fa6";
 import { MdPestControlRodent } from "react-icons/md";
 import { IoMdHome } from "react-icons/io";
+import { RiGovernmentFill } from "react-icons/ri";
 
 const Sidebar = () => {
     return (
@@ -13,6 +14,7 @@ const Sidebar = () => {
                     flex flex-col sticky
                     shadow-lg'>
             <SidebarIcon icon={<IoMdHome />} text="Home" link="/" />
+            <SidebarIcon icon={<RiGovernmentFill />} text="Government Schemes" link="/" />
             <SidebarIcon icon={<FaTractor />} text="Buy Tools" link="/explore/tools" />
             <SidebarIcon icon={<FaSeedling />} text="Buy Seeds" link="/explore/seeds" />
             <SidebarIcon icon={<FaShoppingCart />} text="Check Kart" link="/kart" />
