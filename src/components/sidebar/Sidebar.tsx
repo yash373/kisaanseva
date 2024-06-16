@@ -9,6 +9,7 @@ import { IoMdHome } from "react-icons/io";
 import { RiGovernmentFill } from "react-icons/ri";
 import { GiTrade } from "react-icons/gi";
 import { VscDebugDisconnect } from "react-icons/vsc";
+import { FaTruck } from "react-icons/fa";
 
 const Sidebar = () => {
     return (
@@ -19,6 +20,7 @@ const Sidebar = () => {
             <SidebarIcon icon={<RiGovernmentFill />} text="Government Schemes" link="/governmentschemes" />
             <SidebarIcon icon={<GiTrade />} text="Sell Your Produce" link="/sellproduce" />
             <SidebarIcon icon={<VscDebugDisconnect />} text="Connect To Market" link="/connecttomarket" />
+            <SidebarIcon icon={<FaTruck />} text="Connect to Transport" link="/connecttomarket" />
             <SidebarIcon icon={<FaShoppingCart />} text="Check Kart" link="/kart" />
             <SidebarIcon icon={<FaTractor />} text="Buy Tools" link="/explore/tools" />
             <SidebarIcon icon={<FaSeedling />} text="Buy Seeds" link="/explore/seeds" />
