@@ -3,9 +3,7 @@ import Image from 'next/image'
 
 const Logo = () => {
     return (
-        <div className='flex md:w-[50%] h-[25vh] mx-auto'>
-            <img className='mx-auto' src={"/OnlyFarmers.png"} alt='logo' />
-        </div>
+        <img className='mx-auto h-32' src={"/OnlyFarmers.png"} alt='logo' />
     )
 }
 

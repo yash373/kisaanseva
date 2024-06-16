@@ -5,6 +5,7 @@ import { atom } from "jotai";
 import Sidebar from "@/components/sidebar/Sidebar";
 import { useEffect, useState } from "react";
 import Head from "next/head";
+import Navbar from "@/components/navbar/Navbar";
 
 const kart = atom<ItemProps[]>([])
 
@@ -47,8 +48,11 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <div className="flex md:space-x-5">
         {isPC && <Sidebar />}
-        <div className="flex md:w-[94vw]">
-          <Component {...pageProps} />
+        <div className="flex flex-col md:w-[94vw]">
+          <Navbar />
+          <div className="flex">
+            <Component {...pageProps} />
+          </div>
         </div>
       </div>
       {/* <Footer /> */}
