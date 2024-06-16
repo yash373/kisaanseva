@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import Page from '@/components/reroute/Page'
 
 const SellProduce = () => {
     const router = useRouter()
@@ -10,9 +11,7 @@ const SellProduce = () => {
     }
 
     return (
-        <div className='text-center'>
-            you are being directed to government website for selling produce
-        </div>
+        <Page img='https://images.deccanchronicle.com/dc-Cover-7mksolq65p1nq81hm0cjfo09l3-20190302010500.Medi.jpeg' title='Sell your produce' operation={reroute} />
     )
 }
 
