@@ -4,7 +4,7 @@ import Logo from '../about/Logo'
 
 const Navbar = () => {
     return (
-        <div className='flex flex-col h-[30vh] justify-center items-center'>
+        <div className='flex flex-col h-[35vh] justify-center items-center'>
             <Logo />
             <div className='flex flex-wrap w-full h-1/2 justify-evenly'>
                 <NavbarButton name='Home 🏠' link='/' />
