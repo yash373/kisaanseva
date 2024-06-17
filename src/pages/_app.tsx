@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import Footer from "@/components/footer/Footer";
 import { atom } from "jotai";
 import Sidebar from "@/components/sidebar/Sidebar";
 import { useEffect, useState } from "react";
@@ -57,7 +56,6 @@ export default function App({ Component, pageProps }: AppProps) {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
     </>
   )
 }
