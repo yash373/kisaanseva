@@ -57,12 +57,10 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <div className="flex md:space-x-5">
         {isPC && <Sidebar />}
-        <div className="flex flex-col md:w-[94vw]">
+        <div className="flex flex-col space-y-5 md:w-[94vw]">
           <Navbar />
-          <div className="flex space-y-5 flex-col">
-            <Component {...pageProps} />
-            <Footer />
-          </div>
+          <Component {...pageProps} />
+          <Footer />
         </div>
         {showPopup && <Popup handleClose={() => { setShowPopup(false) }} />}
       </div>
