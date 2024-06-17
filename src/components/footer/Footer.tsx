@@ -10,7 +10,7 @@ const Footer = () => {
             <FooterLink plain={false} title='+91-11233889919' icon={<p className='font-bold'>Nation Agriculture Helpline Number: </p>} link='tel:9111233889919' />
             <FooterLink plain={false} title='Repository' icon={<FaGithub />} link='https://github.com/yash373/onlyfarmers' />
             <FooterLink link='' plain={true} title='Yashodhan Mandal' icon={<FaCode />}  />
-            <FooterLink link='' plain={true} title='Bengaluru' icon={<FaMapMarkerAlt />}  />
+            <FooterLink link='' plain={true} title='NHCE, Bengaluru' icon={<FaMapMarkerAlt />}  />
         </div>
     )
 }
