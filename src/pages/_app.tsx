@@ -45,7 +45,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Onlyfamers</title>
+        <title>KissanSeva</title>
       </Head>
       <div className="flex md:space-x-5">
         {isPC && <Sidebar />}
