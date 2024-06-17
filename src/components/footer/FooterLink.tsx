@@ -17,7 +17,7 @@ const FooterLink = ({ title, link = "", plain = false, icon }: FooterLinkProps) 
                     {title}
                 </div>
             </Link>}
-            {plain && <div className='flex justify-center items-center space-x-1 hover:text-green-500 font-semibold'>
+            {plain && <div className='cursor-pointer flex justify-center items-center space-x-1 hover:text-green-500 font-semibold'>
                 {icon}
                 <div>
                     {title}
