@@ -1,11 +1,15 @@
 import React from 'react'
 import NavbarButton from './NavbarButton'
 import Logo from '../about/Logo'
+import ChangeLanguageButton from '../about/ChangeLanguageButton'
 
 const Navbar = () => {
     return (
         <div className='flex flex-col mb-2 h-[35vh] justify-center items-center'>
-            <Logo />
+            <div className='flex w-full border-b-4 border-black'>
+                <Logo />
+                <ChangeLanguageButton />
+            </div>
             <div className='flex flex-wrap border-b-4 border-black w-full h-1/2 justify-evenly'>
                 <NavbarButton name='Home 🏠' link='/' />
                 <NavbarButton name='Government Schemes 💼' link='/governmentschemes' />
