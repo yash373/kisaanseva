@@ -25,7 +25,7 @@ const Pesticides = ({ items }: ExporeProps) => {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("https://onlyfarmers.vercel.app/api/getData")
+  const res = await fetch("https://kisaanseva.vercel.app/api/getData")
   const data = await res.json()
 
   const parsedData: ItemProps[] = data["data"]
