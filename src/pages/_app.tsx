@@ -46,7 +46,6 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Onlyfamers</title>
-        <link rel="icon" type="image/png" href="/Onlyfarmers.ico" />
       </Head>
       <div className="flex md:space-x-5">
         {isPC && <Sidebar />}
