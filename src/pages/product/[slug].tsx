@@ -40,7 +40,7 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps<{ item: ItemProps }> = async (context) => {
-  const res = await fetch("https://onlyfarmers.vercel.app/api/getData")
+  const res = await fetch("https://kisaanseva.vercel.app/api/getData")
   const data = await res.json()
 
   const slug = context.params?.slug as string
