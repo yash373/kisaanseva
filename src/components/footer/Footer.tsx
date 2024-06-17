@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='border-t-2 border-2'>
+    <div className='flex border-t-4 h-[10vh] border-black'>
       footer
     </div>
   )
