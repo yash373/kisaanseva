@@ -5,6 +5,7 @@ import Sidebar from "@/components/sidebar/Sidebar";
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 // made website fast
 
@@ -51,8 +52,9 @@ export default function App({ Component, pageProps }: AppProps) {
         {isPC && <Sidebar />}
         <div className="flex flex-col md:w-[94vw]">
           <Navbar />
-          <div className="flex">
+          <div className="flex flex-col">
             <Component {...pageProps} />
+            <Footer />
           </div>
         </div>
       </div>
