@@ -2,4 +2,4 @@ This is a website that was showcased at the Hackhive NHCE Hacakthon Bengaluru on
 
 The premise of this website is to be an ecommerce platform that sells everything a farmer could every need
 
-checkout at -> [website](https://onlyfarmers.vercel.app/)
+checkout at -> [website](https://kisaanseva.vercel.app/)
