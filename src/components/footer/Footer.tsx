@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      
+    <div className='border-t-2 border-2'>
+      footer
     </div>
   )
 }
