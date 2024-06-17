@@ -25,7 +25,7 @@ const Product = ({ item }: ProductProps) => {
 // This function gets called at build time
 export async function getStaticPaths() {
   // Call an external API endpoint to get posts
-  const res = await fetch('https://onlyfarmers.vercel.app/api/getData')
+  const res = await fetch('https://kisaanseva.vercel.app/api/getData')
   const data = await res.json()
   const items: ItemProps[] = data["data"]
 
