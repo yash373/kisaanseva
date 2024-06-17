@@ -52,7 +52,7 @@ export default function App({ Component, pageProps }: AppProps) {
         {isPC && <Sidebar />}
         <div className="flex flex-col md:w-[94vw]">
           <Navbar />
-          <div className="flex flex-col">
+          <div className="flex space-y-5 flex-col">
             <Component {...pageProps} />
             <Footer />
           </div>
