@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import Popup from "@/components/Popup/Popup";
 
 // made website fast
 
@@ -24,6 +25,7 @@ export interface ItemProps {
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isPC, setIsPC] = useState(false)
+  const [showPopup, setShowPopup] = useState(false)
 
   const detectDeviceType = () =>
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -42,6 +44,12 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   })
 
+  useEffect(() => {
+    setTimeout(() => {
+      setShowPopup(true);
+    }, 10000);
+  }, []);
+
   return (
     <>
       <Head>
@@ -56,6 +64,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <Footer />
           </div>
         </div>
+        {showPopup && <Popup handleClose={() => { setShowPopup(false) }} />}
       </div>
     </>
   )

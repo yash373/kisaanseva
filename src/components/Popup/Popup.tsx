@@ -27,16 +27,16 @@ const Popup = ({ handleClose }: PopupProps) => {
     }
 
     const handleSubmit = () => {
-
+        handleClose()
     }
 
     return (
-        <div className="fixed h-full my-auto md:w-[70%] flex justify-center items-center">
+        <div className="fixed h-full my-auto w-[100vw] flex justify-center items-center">
             <div className="rounded-xl shadow-2xl p-5 bg-white border-2 max-w-6xl mx-auto my-auto sm:px-6 lg:px-8">
                 <div className="overflow-hidden">
                     <div className="flex flex-col">
                         <h1 className='capitalize text-center font-extrabold text-3xl'>
-                            Fill form for free consultation
+                            Get Direct Help From KisaanSeva
                         </h1>
                         <audio className='hidden' id="myAudio" src="https://studymbbsabroad.co.in/Sounds/tingsound.wav" controls />
                         <form action='javascript:void(0)' className=" flex flex-col justify-center text-sm">
@@ -52,7 +52,7 @@ const Popup = ({ handleClose }: PopupProps) => {
 
                             <div className="flex flex-col">
                                 <label htmlFor="msg" className="hidden">City</label>
-                                <input value={msg} onChange={handleChange} type="text" name="msg" id="msg" placeholder="msg" className="w-100 mt-2 py-3 px-3 rounded-lg border border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" />
+                                <input value={msg} onChange={handleChange} type="text" name="msg" id="msg" placeholder="Enter Your Message" className="w-100 mt-2 py-3 px-3 rounded-lg border border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" />
                             </div>
 
                             <div className='flex flex-col md:flex-row gap-2 md:gap-0 w-full'>
