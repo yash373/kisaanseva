@@ -2,6 +2,7 @@ import React from 'react'
 import FooterLink from './FooterLink'
 import { FaGithub } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -9,6 +10,7 @@ const Footer = () => {
             <FooterLink plain={false} title='+91-11233889919' icon={<p className='font-bold'>Nation Agriculture Helpline Number: </p>} link='tel:9111233889919' />
             <FooterLink plain={false} title='Repository' icon={<FaGithub />} link='https://github.com/yash373/onlyfarmers' />
             <FooterLink link='' plain={true} title='Yashodhan Mandal' icon={<FaCode />}  />
+            <FooterLink link='' plain={true} title='Bengaluru' icon={<FaMapMarkerAlt />}  />
         </div>
     )
 }
