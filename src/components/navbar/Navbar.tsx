@@ -16,11 +16,11 @@ const Navbar = () => {
                 <NavbarButton name='Know Your MSP 🌾' link='/msp' />
                 <NavbarButton name='Get Help 🔴' link='/helpline' />
                 <NavbarButton name='File Your Complaint 📃' link='/complains' />
-                <NavbarButton name='Kart 🛒' link='/kart' />
                 <NavbarButton name='Buy Tools ⛏' link='/explore/tools' />
                 <NavbarButton name='Buy Seeds 🌱' link='/explore/seeds' />
                 <NavbarButton name='Buy Fertilizers 💉' link='/explore/fertilizers' />
                 <NavbarButton name='Buy Pesticides 🧪' link='/explore/pesticides' />
+                <NavbarButton name='Kart 🛒' link='/kart' />
             </div>
         </div>
     )
