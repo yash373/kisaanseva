@@ -10,7 +10,7 @@ const Navbar = () => {
                 <Logo />
                 <ChangeLanguageButton />
             </div>
-            <div className='flex flex-wrap border-b-4 border-black w-full h-1/2 justify-evenly'>
+            <div className='flex flex-wrap border-b-4 border-black w-full justify-evenly'>
                 <NavbarButton name='Home 🏠' link='/' />
                 <NavbarButton name='Government Schemes 💼' link='/governmentschemes' />
                 <NavbarButton name='Sell Produce 💰' link='/sellproduce' />
