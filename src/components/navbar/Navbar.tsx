@@ -5,12 +5,12 @@ import ChangeLanguageButton from '../about/ChangeLanguageButton'
 
 const Navbar = () => {
     return (
-        <div className='flex flex-col h-full justify-center items-center'>
+        <div className='flex flex-col pt-2 justify-center items-center'>
             <div className='flex md:flex-row flex-col-reverse w-full border-b-4 border-black'>
                 <Logo />
                 <ChangeLanguageButton />
             </div>
-            <div className='flex flex-wrap border-b-4 border-black w-full h-1/2 justify-evenly'>
+            <div className='flex py-4 flex-wrap border-b-4 border-black w-full justify-evenly'>
                 <NavbarButton name='Home 🏠' link='/' />
                 <NavbarButton name='Government Schemes 💼' link='/governmentschemes' />
                 <NavbarButton name='Sell Produce 💰' link='/sellproduce' />
