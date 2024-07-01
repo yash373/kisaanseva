@@ -7,6 +7,7 @@ import Head from "next/head";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import Popup from "@/components/Popup/Popup";
+import { appWithTranslation } from 'next-i18next';
 
 // made website fast
 
@@ -23,7 +24,7 @@ export interface ItemProps {
   desc: string
 }
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   const [isPC, setIsPC] = useState(false)
   const [showPopup, setShowPopup] = useState(false)
 
@@ -67,3 +68,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   )
 }
+
+export default appWithTranslation(App);
