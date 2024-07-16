@@ -12,7 +12,7 @@ const Search = () => {
   }
 
   const handleSubmit = () => {
-    const query = `https://chatgpt.com?q=i am a farmer in india and i need help, ${search}`
+    const query = `https://chatgpt.com?q=i am a poor farmer in india and i need help, ${search}`
 
     router.push(query)
   }
