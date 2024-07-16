@@ -20,7 +20,7 @@ const Search = () => {
   return (
     <div className='md:w-[50%] w-full border border-gray-400 rounded-lg flex flex-row mb-2'>
       <input value={search} onChange={handleChange} type="name" name="name" id="name" placeholder="Search" className="w-[90%] py-3 px-3 rounded-l-lg border border-gray-400 text-gray-800 font-semibold" />
-      <SubmitButton />
+      <SubmitButton operation={()=>{handleSubmit()}} />
     </div>
   )
 }
