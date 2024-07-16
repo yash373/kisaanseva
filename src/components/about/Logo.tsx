@@ -2,7 +2,7 @@ import React from 'react'
 
 const Logo = () => {
     return (
-        <div className='flex w-full justify-center items-center space-x-2'>
+        <div className='flex w-full md:w-[30%] justify-center items-center space-x-2'>
             <p className='font-extrabold w-full text-4xl mb-4 uppercase'>KisaanSeva 👩‍🌾</p>
             {/* <p className='text-md w-full font-semibold mt-auto'> - Empowering Futures, Cultivating Futures.</p> */}
         </div>

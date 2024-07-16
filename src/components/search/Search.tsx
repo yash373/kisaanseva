@@ -5,7 +5,7 @@ const Search = () => {
   const [search, setSearch] = useState<string>("")
 
   return (
-    <div>
+    <div className='w-[50%] rounded-md flex mb-2'>
       this is the search box
     </div>
   )
