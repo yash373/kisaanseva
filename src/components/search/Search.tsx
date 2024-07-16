@@ -12,13 +12,13 @@ const Search = () => {
   }
 
   const handleSubmit = () => {
-    const query = `https://chatgpt.com?q=i am a farmer in india and i need help ${search}`
+    const query = `https://chatgpt.com?q=i am a farmer in india and i need help, ${search}`
 
     router.push(query)
   }
 
   return (
-    <div className='md:w-[50%] w-full border border-gray-400 rounded-lg flex flex-row mb-2'>
+    <div className='md:w-[58%] w-full border border-gray-400 rounded-lg flex flex-row mb-2'>
       <input value={search} onChange={handleChange} type="name" name="name" id="name" placeholder="Search" className="w-[90%] py-3 px-3 rounded-l-lg border border-gray-400 text-gray-800 font-semibold" />
       <SubmitButton operation={()=>{handleSubmit()}} />
     </div>
