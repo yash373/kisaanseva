@@ -38,7 +38,7 @@ const Popup = ({ handleClose }: PopupProps) => {
                         <h1 className='capitalize text-center font-extrabold text-3xl'>
                             Get Direct Help From KisaanSeva
                         </h1>
-                        <audio className='hidden' id="myAudio" src="https://studymbbsabroad.co.in/Sounds/tingsound.wav" controls />
+                        {/* <audio className='hidden' id="myAudio" src="https://studymbbsabroad.co.in/Sounds/tingsound.wav" controls /> */}
                         <form action='javascript:void(0)' className=" flex flex-col justify-center text-sm">
                             <div className="flex flex-col">
                                 <label htmlFor="name" className="hidden">Full Name</label>
