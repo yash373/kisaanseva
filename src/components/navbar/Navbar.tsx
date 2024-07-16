@@ -2,12 +2,14 @@ import React from 'react'
 import NavbarButton from './NavbarButton'
 import Logo from '../about/Logo'
 import ChangeLanguageButton from '../about/ChangeLanguageButton'
+import Search from '../search/Search'
 
 const Navbar = () => {
     return (
         <div className='flex flex-col pt-2 justify-center items-center'>
             <div className='flex md:flex-row flex-col-reverse w-full border-b-4 border-black'>
                 <Logo />
+                <Search />
                 <ChangeLanguageButton />
             </div>
             <div className='flex py-4 flex-wrap border-b-4 border-black w-full justify-evenly'>

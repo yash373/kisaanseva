@@ -3,7 +3,7 @@ import React from 'react'
 const Search = () => {
   return (
     <div>
-      search bar
+      this is the search box
     </div>
   )
 }
