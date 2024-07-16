@@ -8,8 +8,6 @@ import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import Popup from "@/components/Popup/Popup";
 
-// made website fast
-
 const kart = atom<ItemProps[]>([])
 
 export { kart }
