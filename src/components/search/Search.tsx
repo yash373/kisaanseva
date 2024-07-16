@@ -1,11 +1,19 @@
 import React from 'react'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 
 const Search = () => {
   const [search, setSearch] = useState<string>("")
+  const router = useRouter()
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value)
+  }
+
+  const handleSubmit = () => {
+    const query = `https://chatgpt.com?q=i am a farmer in india and i need help ${search}`
+  
+    router.push(query)
   }
 
   return (
