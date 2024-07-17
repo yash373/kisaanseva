@@ -9,6 +9,7 @@ import Footer from "@/components/footer/Footer";
 import Popup from "@/components/Popup/Popup";
 
 const kart = atom<ItemProps[]>([])
+const lang = atom<string>("EN")
 
 export { kart }
 
