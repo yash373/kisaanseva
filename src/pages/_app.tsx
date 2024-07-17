@@ -45,7 +45,8 @@ export default function App({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     setTimeout(() => {
-      setShowPopup(true);
+      // setShowPopup(true);
+      // turned off popup
     }, 10000);
   }, []);
 
