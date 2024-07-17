@@ -15,6 +15,7 @@ const Search = () => {
     const query = `https://chatgpt.com?q=i am a poor farmer in india and i need help, ${search}`
 
     if (search){
+      setSearch("")
       router.push(query)
     }else{
       alert("Your query is empty.")
