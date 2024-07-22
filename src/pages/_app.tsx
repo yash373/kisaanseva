@@ -7,35 +7,9 @@ import Head from "next/head";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import Popup from "@/components/Popup/Popup";
-import { useAtom } from "jotai";
 
 const kart = atom<ItemProps[]>([])
 const lang = atom<string>("en")
-
-export const translateText = async (text: string) => {
-  const [language, setLanguage] = useAtom<string>(lang)
-  const url = 'https://google-translate113.p.rapidapi.com/api/v1/translator/text';
-
-  try {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'x-rapidapi-key': 'ec61e51168mshc5dd404402da954p19b372jsnb98e46bc7f2d',
-        'x-rapidapi-host': 'google-translate113.p.rapidapi.com',
-        'Content-Type': 'application/json'
-      },
-      body: {
-        from: 'auto',
-        to: language,
-        text: text,
-      }
-    });
-    const result:any = await response.text();
-    return result.trans
-  } catch (error) {
-    console.error(error);
-  }
-}
 
 export { kart }
 
