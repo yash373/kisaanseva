@@ -1,14 +1,9 @@
 import React from "react"
 import Image from 'next/image'
 import Text from '@/components/about/Text'
-import { translateText } from "./_app"
 import { useEffect } from "react"
 
 const Home = () => {
-  const print = async() => {
-    console.log(translateText("नमस्ते","en"))
-  }
-
   useEffect(()=>{
     print()
   })
