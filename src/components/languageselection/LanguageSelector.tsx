@@ -36,6 +36,7 @@ const LanguageSelector = ({  }: LanguageSelectorProps) => {
             <Language lang='Oriya' code='or' changeLanguage={changeLanguage} />
             <Language lang='Punjabi' code='pa' changeLanguage={changeLanguage} />
             <Language lang='Sindhi' code='sd' changeLanguage={changeLanguage} />
+            <Language lang='Tamil' code='ta' changeLanguage={changeLanguage} />
         </div>
     )
 }
