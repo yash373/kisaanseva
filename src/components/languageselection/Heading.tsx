@@ -1,11 +1,15 @@
 import React from 'react'
 
-const Heading = (text: string) => {
-  return (
-    <div>
-      
-    </div>
-  )
+interface HeadingProps {
+    text: string
+}
+
+const Heading = ({ text }: HeadingProps) => {
+    return (
+        <div className='mx-auto font-bold text-xl text-center'>
+            {text}
+        </div>
+    )
 }
 
 export default Heading

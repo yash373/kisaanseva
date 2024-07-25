@@ -3,6 +3,7 @@ import { lang } from '@/pages/_app'
 import { useAtom } from 'jotai'
 import Language from './Language'
 import { openLanguageSelector } from '@/pages/_app'
+import Heading from './Heading'
 
 interface LanguageSelectorProps {
     
@@ -21,7 +22,12 @@ const LanguageSelector = ({  }: LanguageSelectorProps) => {
     }
 
     return (
-        <div className='fixed h-[80vh] backdrop-blur-lg rounded-lg mx-auto my-auto w-[100vw] md:w-[50vw] flex justify-center items-center'>
+        <div className='fixed space-y-5 py-5 flex-col h-[80vh] backdrop-blur-lg rounded-lg mx-auto my-auto w-[100vw] md:w-[50vw] flex items-center'>
+            <Heading text={'Select Language'} />
+            <Language lang='Hindi' code='hi' changeLanguage={changeLanguage} />
+            <Language lang='Hindi' code='hi' changeLanguage={changeLanguage} />
+            <Language lang='Hindi' code='hi' changeLanguage={changeLanguage} />
+            <Language lang='Hindi' code='hi' changeLanguage={changeLanguage} />
             <Language lang='Hindi' code='hi' changeLanguage={changeLanguage} />
         </div>
     )
