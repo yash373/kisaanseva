@@ -11,7 +11,7 @@ import LanguageSelector from "@/components/languageselection/LanguageSelector";
 
 const kart = atom<ItemProps[]>([])
 const lang = atom<string>("en")
-const openLanguageSelector = atom<boolean>(true)
+const openLanguageSelector = atom<boolean>(false)
 
 export { kart, lang, openLanguageSelector }
 
