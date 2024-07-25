@@ -21,7 +21,7 @@ const LanguageSelector = ({  }: LanguageSelectorProps) => {
     }
 
     return (
-        <div className='fixed h-full my-auto w-[100vw] flex justify-center items-center'>
+        <div className='fixed h-full mx-auto my-auto w-[50vw] flex justify-center items-center'>
             <Language lang='Hindi' code='hi' changeLanguage={changeLanguage} />
         </div>
     )
