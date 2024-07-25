@@ -8,8 +8,8 @@ interface LanguageProps {
 
 const Language = ({lang, code, changeLanguage}: LanguageProps) => {
   return (
-    <div className='fixed h-full my-auto w-[100vw] flex justify-center items-center'>
-      
+    <div>
+        
     </div>
   )
 }
