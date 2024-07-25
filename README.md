@@ -1,5 +1,10 @@
 This is a website that was showcased at the Hackhive NHCE Hacakthon Bengaluru on 26/7/24
 
-The premise of this website is to be an ecommerce platform that sells everything a farmer could every need
+Next JS
+React JS
+Tailwind CSS
+Jotai
+RapidAPI (for translation service)
+Typescript
 
 checkout at -> [website](https://kisaanseva.vercel.app/)
