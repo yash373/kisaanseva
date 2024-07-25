@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className='flex md:flex-row flex-col-reverse w-full border-b-4 border-black'>
                 <Logo />
                 <Search />
-                <ChangeLanguageButton />
+                {/* <ChangeLanguageButton /> */}
             </div>
             <div className='flex py-4 flex-wrap border-b-4 border-black w-full justify-evenly'>
                 <NavbarButton name='Home 🏠' link='/' />
