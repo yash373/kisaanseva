@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { atom } from "jotai";
+import { atom, useAtom } from "jotai";
 import Sidebar from "@/components/sidebar/Sidebar";
 import { useEffect, useState } from "react";
 import Head from "next/head";
@@ -11,8 +11,9 @@ import LanguageSelector from "@/components/languageselection/LanguageSelector";
 
 const kart = atom<ItemProps[]>([])
 const lang = atom<string>("en")
+const openLanguageSelector = atom<boolean>(false)
 
-export { kart, lang }
+export { kart, lang, openLanguageSelector }
 
 export interface ItemProps {
   image: string,
@@ -26,6 +27,7 @@ export interface ItemProps {
 export default function App({ Component, pageProps }: AppProps) {
   const [isPC, setIsPC] = useState(false)
   const [showPopup, setShowPopup] = useState(false)
+  const [openSelector, setOpenSelector] = useAtom(openLanguageSelector)
 
   const detectDeviceType = () =>
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -64,7 +66,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Footer />
         </div>
         {showPopup && <Popup handleClose={() => { setShowPopup(false) }} />}
-        {<LanguageSelector />}
+        {openSelector && <LanguageSelector />}
       </div>
     </>
   )
