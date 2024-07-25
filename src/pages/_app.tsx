@@ -58,7 +58,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>KissanSeva</title>
       </Head>
-      <div className="flex justify-center items-center md:space-x-5">
+      <div className="flex justify-center md:space-x-5">
         {isPC && <Sidebar />}
         <div className="flex flex-col space-y-5 md:w-[94vw]">
           <Navbar />
