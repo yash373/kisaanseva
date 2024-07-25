@@ -71,12 +71,3 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   )
 }
-
-// Languages that will be supported:
-// 1. English
-// 2. Hindi
-// 3. Bengali
-// 4. Kanndada
-// 5. Malyalam
-// 6. Telugu
-// 7. Tamil
