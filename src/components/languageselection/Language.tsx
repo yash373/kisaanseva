@@ -16,9 +16,11 @@ const Language = ({ lang, code, changeLanguage }: LanguageProps) => {
     }
 
     return (
-        <div>
-
-        </div>
+        <button className='flex h-[5vh] backdrop-blur-sm w-full'>
+            <p className='mx-auto my-auto text-lg capitalize font-semibold'>
+                {lang}
+            </p>
+        </button>
     )
 }
 
