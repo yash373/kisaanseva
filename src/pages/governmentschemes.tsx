@@ -4,7 +4,7 @@ import Association from '@/components/connecttomarket/Association'
 
 const GovernmentSchemes = () => {
   return (
-    <div className='flex flex-col space-y-4 w-full'>
+    <div className='flex flex-col h-full space-y-4 w-full'>
       <Heading text='Government Schemes 💼' />
       <div className='flex flex-row space-x-1 flex-wrap justify-evenly items-center'>
         <Association big={false} img='https://cdn1.byjus.com/wp-content/uploads/2016/05/e-nams-role-in-the-agriculture-sector-of-india1.png' link='https://www.enam.gov.in/web/' name='E-NAM' desc="an online trading platform for agricultural communities in India" />

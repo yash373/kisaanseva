@@ -22,7 +22,7 @@ const LanguageSelector = ({  }: LanguageSelectorProps) => {
     }
 
     return (
-        <div className='fixed space-y-5 py-5 flex-col h-[80vh] backdrop-blur-lg rounded-lg mx-auto my-auto w-[100vw] md:w-[50vw] flex items-center'>
+        <div className='fixed space-y-5 my-10 py-5 flex-col h-[80vh] backdrop-blur-lg rounded-lg mx-auto w-[100vw] md:w-[50vw] flex items-center'>
             <Heading text={'Select Language'} />
             <Language lang='Hindi' code='hi' changeLanguage={changeLanguage} />
             <Language lang='Hindi' code='hi' changeLanguage={changeLanguage} />
