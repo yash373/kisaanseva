@@ -66,7 +66,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Footer />
         </div>
         {showPopup && <Popup handleClose={() => { setShowPopup(false) }} />}
-        {openSelector && <LanguageSelector handleClose={() => { setOpenSelector(false) }} />}
+        {openSelector && <LanguageSelector />}
       </div>
     </>
   )
