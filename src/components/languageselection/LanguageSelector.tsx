@@ -2,7 +2,11 @@ import React from 'react'
 import { lang } from '@/pages/_app'
 import { useAtom } from 'jotai'
 
-const LanguageSelector = () => {
+interface LanguageSelectorProps {
+    handleClose: () => void
+}
+
+const LanguageSelector = ({ handleClose }: LanguageSelectorProps) => {
     const [language, setLanguage] = useAtom<string>(lang)
 
     return (
