@@ -57,6 +57,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>KissanSeva</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
       </Head>
       <div className="flex justify-center w-full h-full md:space-x-5">
         {isPC && <Sidebar />}
