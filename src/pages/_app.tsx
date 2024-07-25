@@ -11,7 +11,7 @@ import Popup from "@/components/Popup/Popup";
 const kart = atom<ItemProps[]>([])
 const lang = atom<string>("en")
 
-export { kart }
+export { kart, lang }
 
 export interface ItemProps {
   image: string,
