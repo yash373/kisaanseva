@@ -15,6 +15,11 @@ const Language = ({ lang, code, changeLanguage }: LanguageProps) => {
         setOpenSelector(false)
     }
 
+    const handleSelection = () => {
+        changeLanguage(code)
+        handleClose()
+    }
+
     return (
         <button className='flex h-[5vh] bg-white bg-opacity-50 hover:bg-opacity-70 rounded-md w-[80%]'>
             <p className='mx-auto my-auto text-lg capitalize font-semibold'>
