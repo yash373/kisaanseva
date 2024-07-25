@@ -21,7 +21,7 @@ const Language = ({ lang, code, changeLanguage }: LanguageProps) => {
     }
 
     return (
-        <button onClick={handleSelection}  className='flex h-[5vh] my-auto bg-white bg-opacity-50 hover:bg-opacity-70 rounded-md w-[80%]'>
+        <button onClick={handleSelection}  className='flex h-[5vh] my-auto bg-white bg-opacity-50 hover:bg-opacity-95 rounded-md w-[80%]'>
             <p className='mx-auto my-auto text-lg capitalize font-semibold'>
                 {lang}
             </p>
