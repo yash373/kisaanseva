@@ -7,6 +7,7 @@ import Head from "next/head";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import Popup from "@/components/Popup/Popup";
+import LanguageSelector from "@/components/languageselection/LanguageSelector";
 
 const kart = atom<ItemProps[]>([])
 const lang = atom<string>("en")
@@ -63,6 +64,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Footer />
         </div>
         {showPopup && <Popup handleClose={() => { setShowPopup(false) }} />}
+        {<LanguageSelector />}
       </div>
     </>
   )

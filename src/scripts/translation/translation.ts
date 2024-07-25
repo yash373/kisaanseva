@@ -25,6 +25,6 @@ const translate = async (targetLanguage: string, text: string) => {
     }
 }
 
-translate("fr","hello")
+// translate("fr","hello")
 
 export { translate }

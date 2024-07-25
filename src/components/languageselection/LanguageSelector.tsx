@@ -6,7 +6,7 @@ const LanguageSelector = () => {
     const [language, setLanguage] = useAtom<string>(lang)
 
     return (
-        <div>
+        <div className=''>
 
         </div>
     )
