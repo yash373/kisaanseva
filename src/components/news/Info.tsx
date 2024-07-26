@@ -11,7 +11,7 @@ interface InfoProps {
 
 const Info = ({ img, title, para, link }: InfoProps) => {
     return (
-        <Link href={link} target='_blank' className='space-y-3 rounded-md border-2 border-gray-200 p-2 flex flex-col mx-auto w-[70vw] h-full'>
+        <Link href={link} target='_blank' className='space-y-3 rounded-md border-2 border-gray-200 p-2 flex flex-col mx-auto md:w-[70vw] h-full'>
             <img className='h-full' src={img} alt="info" />
             <Heading text={title} />
             <p>{para}</p>
