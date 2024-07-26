@@ -6,7 +6,7 @@ interface ProductImageProps {
 
 const ProductImage = ({ image }: ProductImageProps) => {
     return (
-        <img className='w-[30vw] h-[30vw]' src={image} alt="productImage" />
+        <img className='md:w-[50vw] w-[95vw] border-2 border-slate-600 h-[30vh] md:h-[30vw]' src={image} alt="productImage" />
     )
 }
 
