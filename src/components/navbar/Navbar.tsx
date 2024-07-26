@@ -22,6 +22,7 @@ const Navbar = () => {
                 <NavbarButton name='Know Your MSP 🌾' link='/msp' />
                 <NavbarButton name='Get Help 🔴' link='/helpline' />
                 <NavbarButton name='File Your Complaint 📃' link='/complains' />
+                <NavbarButton name='News 📰' link='/news' />
                 <NavbarButton name='Buy Tools ⛏' link='/explore/tools' />
                 <NavbarButton name='Buy Seeds 🌱' link='/explore/seeds' />
                 <NavbarButton name='Buy Fertilizers 💉' link='/explore/fertilizers' />
