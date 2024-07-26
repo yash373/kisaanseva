@@ -11,10 +11,10 @@ interface ProductTextProps {
 
 const ProductText = ({ title, desc, price, item }: ProductTextProps) => {
     return (
-        <div className='flex flex-col space-y-5'>
-            <p className='text-3xl font-extrabold capitalize'>{title}</p>
-            <p className='text-3xl font-semibold'>{desc}</p>
-            <p className='text-3xl'>₹ {price}</p>
+        <div className='flex flex-col md:py-0 py-4 space-y-3'>
+            <p className='text2xl md:text-2xl font-extrabold capitalize'>{title}</p>
+            <p className='text-lg font-semibold'>{desc}</p>
+            <p className='text-lg font-bold'>₹ {price}</p>
             <ProductKartButton item={item} />
         </div>
     )
